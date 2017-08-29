@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Dicas de Programação</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					# Dicas de Programação
+				</section>
+
+				<section>
+
+					<ol>
+						<li class="fragment">Facilite a leitura de seu código.</li>
+						<li class="fragment">Mantenha sempre um backup de tudo. Imprevistos acontecem...</li>
+						<li class="fragment">Documente seu trabalho.</li>
+					</ol>
+				</section>
+
+				<section>
+					<section>
+						<h2> Principio de Pareto (80/20)</h2>
+
+						<ul>
+							<li class=fragment>80% do seus esforços => 20% de seus resultados</li>
+							<ul class=fragment>
+								<li>Ex: Configurar computador, refazer drivers, formatação de documentos, locomoção entre lugares, ...</li>
+							</ul>
+							</br>
+							<li class=fragment>20% do seus esforços => 80% de seus resultados</li>
+							<ul class=fragment>
+								<li>Ex: Pesquisa, Ensino, ... </li>
+							</ul>
+						</ul>
+
+						</br></br>
+						<span  class=fragment >Mais sobre: <a href="https://www.youtube.com/watch?v=3VZDKi5W9fQ">Video Ilustramente "O PRINCÍPIO 80/20"</a></span>
+					</section>
+				</section>
+
+				<section data-markdown>
+					# 1. Facilite a Leitura do código
+				</section>
+
+				<section>
+				<h2> 1. Não criptografe...</h2>
+
+				A não ser que realmente tenha um motivo...
+
+				<pre><code class="cpp" contenteditable>
+int I=256,l,c, o,O=3; void e(
+int L){ o=0; for( l=8; L>>++l&&
+16>l;                 o+=l
+<<l-              1) ;
+o+=l           *L-(l<<l-1); { ; }
+if (          pread(3,&L,3,O+o/8)<
+2)/*          */exit(0);	L>>=7&o;
+L%=1           <<l; L>>8?256-L?e(
+L-1)              ,c||
+(e(c              =L),
+c=0)              :( O
++=(-I&7)*l+o+l>>3,I=L):putchar(
+L); }int main(int l,char**o){
+			for(
+		 /*	    ////      */
+		open(1[o],0); ; e(I++
+		 ))		      ;}
+
+					</code></pre>
+
+				Fonte:	<a href="http://www.ioccc.org/2015/mills2/hint.html"> 24<sup>th</sup>  IOCCC Most Compact Winner</a>
+				</section>
+
+				<section data-markdown>
+				## Facilite a leitura
+				 * Use nomes mnemonicos
+				 * Comente seu código
+				 * Use indetação
+				 * Use guias de estilo
+				</section>
+
+				<section data-markdown>
+					```
+					#include <iostream>
+					using namespace std;
+
+					int main()
+					{
+						unsigned int n;
+						unsigned long long factorial = 1;
+
+						cout << "Digite um número inteiro positivo";
+						cin >> n;
+
+						// Cálculo do Fatorial
+						for(int i = 1; i <=n; ++i)
+						{
+							factorial *= i;
+						}
+
+						cout << "Fatorial de " << n << " é " << factorial;
+						return 0;
+					}
+					```
+				</section>
+
+				<section data-markdown>
+					## Exemplos de Guias de Estilos
+
+					* [Guia de Estilo da Google Programação](https://google.github.io/styleguide/)
+					* [Guia de Estilo Material Design](https://material.io/guidelines/#)
+				</section>
+
+				<section data-markdown>
+					# Faça Backup
+
+					![explode](https://rs754.pbsrc.com/albums/xx190/_sidorak_/avs/writer_explode.gif?w=280&h=210&fit=crop)
+
+					...imprevistos podem sempre acontecer!
+				</section>
+
+				<section>
+					<h2>Backup de Arquivos</h2>
+
+					<ul>
+						<li> Armazenamento em meios distintos</li>
+						<ul class="fragment">
+							<li>Ex: CD, HD Externo, Armazenamento na Núvem</li>
+						</ul>
+						<li class="fragment">Backup de Versões Anteriores</li>
+						<ul class="fragment">
+							<li class="fragment">Renomear Arquivos Anteriores</li>
+							<li class="fragment">Sistemas de Versionamento (SVN,GIT)</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<section data-markdown>
+						## GitHub
+
+						* Sistema de controle de versão baseado no Git
+							* Git: Criado por Linus Torvalds para desenvolvimento do Kernel do Linux.
+						* Repositório Online de Códigos
+							* Contas para usuário e organizações
+						* Hospedagem de Páginas Online ( [GitPages:](https://pages.github.com/) )
+					</section>
+
+					<section data-markdown>
+					## GitHub - Conceitos básicos
+
+					* [Git - Guia Prático"](http://git.huit.harvard.edu/guide/index.pt_BR.html)
+					* [Tutorial Interativo](https://try.github.io/)
+					* [Guias Github](https://guides.github.com/)
+					* [Markdown](https://guides.github.com/features/mastering-markdown/)
+
+					</section>
+
+					<section data-markdown>
+					## GitHub - Outros Link
+
+					* [GUI GitKraken](https://www.gitkraken.com/)
+					* [GitHub do Lara](https://github.com/lara-unb)
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						## Documente seu trabalho
+					</section>
+
+					<section data-markdown>
+						## Registro diário
+
+						* "Backup" das pequenas sacadas e atividades
+						* Direcionar próximas ações
+						* Tratar toda ação de maneira científica (hipóteses, testes)
+					</section>
+
+					<section data-markdown>
+						## Documentação de Código
+
+						* [GitWiki](https://help.github.com/articles/about-github-wikis/)
+						* [Doxygen](https://www.stack.nl/~dimitri/doxygen/)
+						* [Sphynx](http://www.sphinx-doc.org/en/stable/)
+						* [ReadTheDocs](https://readthedocs.org/)
+						* [WriteTheDocs](http://www.writethedocs.org/)
+					</section>
+
+					<section data-markdown>
+						## Exemplos
+
+						* [Gist](https://gist.github.com/akafael/4b8724da166354e67a2eb057c42e3e38)
+						* [GitWiki](https://github.com/sensesunb/Possibilita_Projetos/wiki)
+						* [Doxygen](https://lara-unb.github.io/rleg-overo/)
+						* [ReadTheDocs](https://cacic-robot.readthedocs.io/en/latest/)
+					</section>
+
+
+				</section>
+
+				<section>
+					<section data-markdown>
+						## Tenha sempre uma boa base
+
+						>> "Se vi mais longe foi por estar de pé sobre ombros de gigantes."( [Isaac Newton](https://pt.wikiquote.org/wiki/Isaac_Newton))
+					</section>
+
+					<section data-markdown>
+						## Use Ferramentas Produtivas
+
+						* Prefira ferramentas que tenha somente o que precisa
+
+						### Exemplos
+						* Editores: Atom, Sublime, Emacs, Vim
+						* IDEs: Visual Studio, Android Studio
+						* Projetos: Trello
+						* Github, Dropbox
+					</section>
+
+					<section data-markdown>
+						## Use de Padrões bem conhecidos
+
+						###  Normatizados
+						* USB, POSIX, Bluetooth, Health Level 7 (HL7)
+
+						### Open Source
+						* Arduino, RaspiberryPi, ...
+
+						### Boas Referências
+						* [NASA](https://standards.nasa.gov/)
+						* [IEEE](http://standards.ieee.org/)
+					</section>
+
+					<section data-markdown>
+						## Use bibliotecas e frameworks
+
+						* Boa Documentação
+						* Suporte Ativo
+						* Comunidade Ativa
+						* Ex: [ROS](www.ros.org/), [Unity](https://unity3d.com/), [D3.js](https://d3js.org/), [Open CL](https://www.khronos.org/opencl/)
+					</section>
+
+				</section>
+
+				<section data-markdown>
+					## Dê apoio as próximas gerações
+
+					![The Iron Giant Movie (1999)](http://www.etonline.com/sites/default/files/images/2015-03/640-iron_giant.jpg)
+				</section>
+
+				<section data-markdown>
+					## Indo Além
+
+					* Outras 97 Dicas para programação: [GitBook "97 Things Every Programmer Should Know"](https://www.gitbook.com/book/97-things-every-x-should-know/97-things-every-programmer-should-know/details)
+				</section>
+
+				<section data-markdown>
+					# Obrigado!
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
