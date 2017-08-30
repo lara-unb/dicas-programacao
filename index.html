@@ -1,4 +1,4 @@
-<!doctype html>
+ld<!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -29,7 +29,7 @@
 				</section>
 
 				<section>
-
+					<h2>Facilite seu trabalho</h2>
 					<ol>
 						<li class="fragment">Facilite a leitura de seu código.</li>
 						<li class="fragment">Mantenha sempre um backup de tudo. Imprevistos acontecem...</li>
@@ -39,14 +39,16 @@
 
 				<section>
 					<section>
-						<h2> Principio de Pareto (80/20)</h2>
+						<h2> Fortaleça o essencial reduzindo retrabalho </h2>
 
+					</br>
+						<h4>Principio de Pareto (80/20)</h4>
+					</br>
 						<ul>
 							<li class=fragment>80% do seus esforços => 20% de seus resultados</li>
 							<ul class=fragment>
-								<li>Ex: Configurar computador, refazer drivers, formatação de documentos, locomoção entre lugares, ...</li>
+								<li>Ex: Retrabalho, configurar computador, refazer drivers, formatação de documentos, locomoção entre lugares ...</li>
 							</ul>
-							</br>
 							<li class=fragment>20% do seus esforços => 80% de seus resultados</li>
 							<ul class=fragment>
 								<li>Ex: Pesquisa, Ensino, ... </li>
@@ -99,6 +101,8 @@
 				</section>
 
 				<section data-markdown>
+					### Exemplo
+
 					```
 					#include <iostream>
 					using namespace std;
@@ -108,19 +112,23 @@
 						unsigned int n;
 						unsigned long long factorial = 1;
 
+						// Entrada de dados
 						cout << "Digite um número inteiro positivo";
 						cin >> n;
 
-						// Cálculo do Fatorial
+						// Cálculo do fatorial de n
 						for(int i = 1; i <=n; ++i)
 						{
 							factorial *= i;
 						}
 
+						// Saída de dados
 						cout << "Fatorial de " << n << " é " << factorial;
 						return 0;
 					}
 					```
+
+					O que este programa faz ?
 				</section>
 
 				<section data-markdown>
@@ -184,89 +192,81 @@
 					</section>
 				</section>
 
-				<section>
-					<section data-markdown>
-						# 3. Documente seu trabalho
-					</section>
-
-					<section data-markdown>
-						## Registro diário
-
-						* "Backup" das pequenas sacadas e atividades
-						* Direcionar próximas ações
-						* Tratar toda ação de maneira científica (hipóteses, testes)
-					</section>
-
-					<section data-markdown>
-						## Documentação de Código
-
-						* [GitWiki](https://help.github.com/articles/about-github-wikis/)
-						* [Doxygen](https://www.stack.nl/~dimitri/doxygen/)
-						* [Sphynx](http://www.sphinx-doc.org/en/stable/)
-						* [ReadTheDocs](https://readthedocs.org/)
-						* [WriteTheDocs](http://www.writethedocs.org/)
-					</section>
-
-					<section data-markdown>
-						## Exemplos
-
-						* [Gist](https://gist.github.com/akafael/4b8724da166354e67a2eb057c42e3e38)
-						* [GitWiki](https://github.com/sensesunb/Possibilita_Projetos/wiki)
-						* [Doxygen](https://lara-unb.github.io/rleg-overo/)
-						* [ReadTheDocs](https://cacic-robot.readthedocs.io/en/latest/)
-					</section>
-
-
+				<section data-markdown>
+					# 3. Documente seu trabalho
 				</section>
 
-				<section>
-					<section data-markdown>
-						## Tenha sempre uma boa base
+				<section data-markdown>
+					## Registro diário
 
-						>> "Se vi mais longe foi por estar de pé sobre ombros de gigantes."( [Isaac Newton](https://pt.wikiquote.org/wiki/Isaac_Newton))
-					</section>
+					* "Backup" das pequenas sacadas e atividades
+					* Direcionar próximas ações
+					* Tratar toda ação de maneira científica (hipóteses, testes)
+				</section>
 
-					<section data-markdown>
-						## Use Ferramentas Produtivas
+				<section data-markdown>
+					## Documentação de Código
 
-						* Prefira ferramentas que tenha somente o que precisa
+					* [GitWiki:](https://help.github.com/articles/about-github-wikis/) Wikipage dentro do GitHub
+					* [Doxygen:](https://www.stack.nl/~dimitri/doxygen/) Documentação através de comentários
+					* [Sphynx:](http://www.sphinx-doc.org/en/stable/) Documentação para Python
+					* [ReadTheDocs:](https://readthedocs.org/) Hospedagem de documentação
+					* [WriteTheDocs:](http://www.writethedocs.org/) Referência sobre como Documentar
+				</section>
 
-						### Exemplos
-						* Editores: Atom, Sublime, Emacs, Vim
-						* IDEs: Visual Studio, Android Studio
-						* Projetos: Trello
-						* Github, Dropbox
-					</section>
+				<section data-markdown>
+					## Exemplos Documentação
 
-					<section data-markdown>
-						## Use de Padrões bem conhecidos
+					* Gist: [Guia Rápido](https://gist.github.com/akafael/4b8724da166354e67a2eb057c42e3e38)
+					* GitWiki: [Wiki Possibilita](https://github.com/sensesunb/Possibilita_Projetos/wiki)
+					* Doxygen: [Documentação RLEG](https://lara-unb.github.io/rleg-overo/)
+					* ReadTheDocs: [Documentação CACIC-Robot](https://cacic-robot.readthedocs.io/en/latest/)
+				</section>
 
-						###  Normatizados
-						* USB, POSIX, Bluetooth, Health Level 7 (HL7)
+				<section data-markdown>
+					## Tenha sempre uma boa base
 
-						### Open Source
-						* Arduino, RaspiberryPi, ...
+					>> "Se vi mais longe foi por estar de pé sobre ombros de gigantes."( [Isaac Newton](https://pt.wikiquote.org/wiki/Isaac_Newton))
+				</section>
 
-						### Boas Referências
-						* [NASA](https://standards.nasa.gov/)
-						* [IEEE](http://standards.ieee.org/)
-					</section>
+				<section data-markdown>
+					## Use Ferramentas Produtivas
 
-					<section data-markdown>
-						## Use bibliotecas e frameworks
+					* Prefira ferramentas que tenha somente o que precisa
 
-						* Boa Documentação
-						* Suporte Ativo
-						* Comunidade Ativa
-						* Ex: [ROS](www.ros.org/), [Unity](https://unity3d.com/), [D3.js](https://d3js.org/), [Open CL](https://www.khronos.org/opencl/)
-					</section>
+					### Exemplos
+					* Editores: Atom, Sublime, Emacs, Vim
+					* IDEs: Visual Studio, Android Studio
+					* Projetos: Trello
+					* Github, Dropbox
+				</section>
 
+				<section data-markdown>
+					## Use de Padrões bem conhecidos
+
+					* **Normatizados:** USB, POSIX, Bluetooth, Health Level 7 (HL7)
+					* **Open Source:** Arduino, RaspiberryPi, ...
+
+					* Referências Normas e Guias
+						* [NASA Standards](https://standards.nasa.gov/)
+						* [IEEE Standards](http://standards.ieee.org/)
+				</section>
+
+				<section data-markdown>
+					## Use bibliotecas e frameworks
+
+					* Boa Documentação
+					* Suporte Ativo
+					* Comunidade Ativa
+					* Ex: [ROS](www.ros.org/), [Unity](https://unity3d.com/), [D3.js](https://d3js.org/), [Open CL](https://www.khronos.org/opencl/)
 				</section>
 
 				<section data-markdown>
 					## Dê apoio as próximas gerações
 
 					![The Iron Giant Movie (1999)](http://www.etonline.com/sites/default/files/images/2015-03/640-iron_giant.jpg)
+
+					Desta forma não só seu trabalho é facilitado mas também garante a continuidade do projeto.
 				</section>
 
 				<section data-markdown>
