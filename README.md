@@ -1,3 +1,3 @@
-# Best Practices Programming
+# Boas Práticas para Programação
 
-Introduction presentation about Programming Best Practices and tools recomendations made using [Reveal.js](https://github.com/hakimel/reveal.js/) and [Markdown](https://guides.github.com/features/mastering-markdown/). It is available throght the link <https://lara-unb.github.io/programing-tips/>
+Apresentação introdutria sobre boas práticas para programação e boas ferramentas feita usando [Reveal.js](https://github.com/hakimel/reveal.js/) , [Markdown](https://guides.github.com/features/mastering-markdown/). Está disponível através do link <https://lara-unb.github.io/dicas-programacao/>
